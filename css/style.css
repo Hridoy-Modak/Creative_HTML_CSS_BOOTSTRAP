@@ -217,7 +217,7 @@ ul li:hover a {
   font-weight: 300;
   text-align: center;
   line-height: 27px;
-  width: 540px;
+  max-width: 540px;
   margin-bottom: 54px;
 }
 .img-card {
@@ -519,17 +519,17 @@ ul li:hover a {
   color: #181818;
   margin-bottom: 15px;
 }
-.footer-conpany-pera{
+.footer-conpany-pera {
   color: #5d5d5d;
 }
-.pera{
+.pera {
   gap: 8px;
 }
-.footer-links{
+.footer-links {
   padding-left: 60px;
   margin-left: 20px;
 }
-.contactp{
+.contactp {
   width: 157px;
   color: #5d5d5d;
 }
@@ -562,19 +562,19 @@ ul li:hover a {
     font-weight: 600;
     margin-top: 50px;
   }
-  .contactp{
+  .contactp {
     max-width: 100px;
     color: #5d5d5d;
   }
-.footer-links{
-  margin-bottom: 75px;
-  padding-left: 0;
-  font-size: 70%;
-  margin-left:0;
-}
-#footer .container-fluid .row{
-  flex-direction: column-reverse;
-}
+  .footer-links {
+    margin-bottom: 75px;
+    padding-left: 0;
+    font-size: 70%;
+    margin-left: 0;
+  }
+  #footer .container-fluid .row {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 991px) {
@@ -635,25 +635,68 @@ ul li:hover a {
   }
   .portfolio-peragraph,
   .banner-paragraph {
-    width: 371px;
+    max-width: 90%;
   }
 }
 @media (max-width: 540px) {
   .container-fluid {
     width: 100%;
   }
-  .portfolio-peragraph,
+  /* .portfolio-peragraph,
   .banner-paragraph,
   .member-pera {
     width: 371px;
-  }
+  } */
   .member-heading {
-    width: 405px;
+    width: 95%;
     font-weight: 600;
     font-size: 50px;
+    margin: auto;
   }
   .member-rating-card {
     margin: auto;
     margin-bottom: 15px;
+  }
+  .member-image {
+    width: 306px;
+    height: 367px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0.1px 0.1px 8px rgb(128, 128, 128);
+    border-radius: 10px;
+  }
+  .member-image img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .image-gradian {
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    display: block;
+  }
+
+  .member-image:hover .image-gradian {
+    height: 60%;
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.5s;
+  }
+  .news-cards {
+    margin-bottom: 20px;
+    width: 95%;
+  }
+  .news-card {
+    padding-left: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-card-image {
+    width: 90%;
+  }
+  .footer-row {
+    margin: auto;
   }
 }
