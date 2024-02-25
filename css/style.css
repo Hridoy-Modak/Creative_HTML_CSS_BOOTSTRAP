@@ -572,9 +572,9 @@ ul li:hover a {
     font-size: 70%;
     margin-left: 0;
   }
-  #footer .container-fluid .row {
+  /* #footer .container-fluid .row {
     flex-direction: column-reverse;
-  }
+  } */
 }
 
 @media (max-width: 991px) {
@@ -698,5 +698,21 @@ ul li:hover a {
   }
   .footer-row {
     margin: auto;
+  }
+  .footer-links {
+    gap: 15px;
+    padding: 0;
+  }
+  .footer-company-heading {
+    font-size: 15px;
+  }
+  .contactp {
+    max-width: 73px;
+  }
+  .footer{
+    padding: 50px 0px;
+  }
+  .footer-1st-col{
+    margin-bottom: 10px;
   }
 }
